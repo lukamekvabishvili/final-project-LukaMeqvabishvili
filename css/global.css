@@ -154,5 +154,5 @@ header .container ul li {
 }
 
 .s-2 {
-  background-image: url(../../images/mta.png);
+  background: url(../../images/background2.jpg), lightgray 50%/cover no-repeat;
 }/*# sourceMappingURL=global.css.map */
