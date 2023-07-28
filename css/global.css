@@ -72,13 +72,20 @@ body {
 }
 
 header {
-  background-color: rgba(226, 250, 252, 0.6);
   width: 100%;
+  background-color: rgba(226, 250, 252, 0.6);
+  margin-bottom: 195px;
 }
 header .container {
   margin: 0 auto;
   width: 100%;
   border: 2px solid black;
+}
+header .container img {
+  color: #fff;
+  width: 200px;
+  height: 70px;
+  margin-right: 78px;
 }
 header .container ul {
   margin: 0 auto;
@@ -90,7 +97,7 @@ header .container ul {
           align-items: center;
 }
 header .container ul li {
-  color: grey;
+  color: #fff;
   font-family: "DM Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -99,22 +106,53 @@ header .container ul li {
   text-transform: uppercase;
   margin-right: 62px;
 }
-header .container ul img {
-  width: 200px;
-  height: 70px;
-  margin-right: 78px;
-}
 
 .s-1 {
-  height: 674px;
+  height: 350px;
 }
 .s-1 h1 {
   color: #FFF;
   font-family: "Roboto", sans-serif;
-  font-size: 120px;
+  font-size: 90px;
   font-style: normal;
   font-weight: 900;
   line-height: 130px; /* 108.333% */
   text-transform: uppercase;
   width: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.s-1 div h3 {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 200px;
+  height: 65px;
+  background-color: red;
+  border-radius: 211px;
+}
+
+.s-2 {
+  background-image: url(../../images/mta.png);
 }/*# sourceMappingURL=global.css.map */
