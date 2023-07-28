@@ -61,8 +61,55 @@ a {
           box-sizing: border-box;
 }
 
-header {
+body {
+  background: url(../../images/Background.jpg);
+  background-color: lightgray;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
-  height: 1080px;
-  background: url(..//images/image1.png);
+}
+
+header {
+  background-color: rgba(226, 250, 252, 0.6);
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  border: 2px solid black;
+}
+.container ul {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container ul li {
+  color: grey;
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-right: 62px;
+}
+.container ul img {
+  width: 200px;
+  height: 70px;
+  margin-right: 78px;
+}
+
+.s-1 h1 {
+  color: #FFF;
+  font-family: "Roboto", sans-serif;
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 130px; /* 108.333% */
+  text-transform: uppercase;
+  width: 650px;
 }/*# sourceMappingURL=global.css.map */
