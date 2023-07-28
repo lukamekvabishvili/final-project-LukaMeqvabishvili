@@ -66,19 +66,21 @@ body {
   background-color: lightgray;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 1285px;
+  height: 747px;
+  margin: 0 auto;
 }
 
 header {
   background-color: rgba(226, 250, 252, 0.6);
+  width: 100%;
 }
-
-.container {
+header .container {
   margin: 0 auto;
   width: 100%;
   border: 2px solid black;
 }
-.container ul {
+header .container ul {
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -87,7 +89,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
-.container ul li {
+header .container ul li {
   color: grey;
   font-family: "DM Sans", sans-serif;
   font-size: 18px;
@@ -97,12 +99,15 @@ header {
   text-transform: uppercase;
   margin-right: 62px;
 }
-.container ul img {
+header .container ul img {
   width: 200px;
   height: 70px;
   margin-right: 78px;
 }
 
+.s-1 {
+  height: 674px;
+}
 .s-1 h1 {
   color: #FFF;
   font-family: "Roboto", sans-serif;
