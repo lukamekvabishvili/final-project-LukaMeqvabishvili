@@ -66,9 +66,6 @@ body {
   background-color: lightgray;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 1285px;
-  height: 747px;
-  margin: 0 auto;
 }
 
 header {
@@ -77,9 +74,18 @@ header {
   margin-bottom: 195px;
 }
 header .container {
-  margin: 0 auto;
+  max-width: 1400px;
   width: 100%;
-  border: 2px solid black;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 header .container img {
   color: #fff;
@@ -107,11 +113,14 @@ header .container ul li {
   margin-right: 62px;
 }
 
-.s-1 {
+.s-1 .container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
   height: 350px;
 }
-.s-1 h1 {
-  color: #FFF;
+.s-1 .container h1 {
+  color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 90px;
   font-style: normal;
@@ -126,7 +135,7 @@ header .container ul li {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.s-1 div h3 {
+.s-1 .container div h3 {
   color: rgba(255, 255, 255, 0.8);
   text-align: center;
   font-family: DM Sans;

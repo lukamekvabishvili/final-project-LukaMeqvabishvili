@@ -2,35 +2,37 @@ header {
     width: 100%;
     background-color: rgba(226, 250, 252, 0.6);
     margin-bottom: 195px;
-  
-    .container {
-      margin: 0 auto;
-      width: 100%;
-      border: 2px solid black;
 
-      img {
-        color: #fff;
-        width: 200px;
-        height: 70px;
-        margin-right: 78px;
-      }
-  
-      ul {
+    .container {
+        max-width: 1400px;
+        width: 100%;
         margin: 0 auto;
         display: flex;
         align-items: center;
-  
-        li {
-          color: #fff;
-          font-family: 'DM Sans', sans-serif;
-          font-size: 18px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: normal;
-          text-transform: uppercase;
-          margin-right: 62px;
+        justify-content: space-between;
+
+        img {
+            color: #fff;
+            width: 200px;
+            height: 70px;
+            margin-right: 78px;
         }
-      }
+
+        ul {
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+
+            li {
+                color: #fff;
+                font-family: "DM Sans", sans-serif;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                text-transform: uppercase;
+                margin-right: 62px;
+            }
+        }
     }
-  }
-  
+}
