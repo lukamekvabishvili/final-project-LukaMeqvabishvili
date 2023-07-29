@@ -1,44 +1,57 @@
 .s-1 {
-    .container {
-      max-width: 1400px;
-      width: 100%;
-      height: 580px;
-      margin: 0 auto;
-  
+  height: 750px;
+
+  .container {
+    max-width: 1400px;
+    width: 100%;
+    height: 580px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .div1 {
+      margin-top: 150px;
+      width: 1268px;
+      max-width: 100%;
       h1 {
-        color: rgb(158, 224, 144);
+        color: rgba(248, 255, 147, 0.738);
         font-family: "Roboto", sans-serif;
         font-size: 90px;
         font-style: normal;
         font-weight: 900;
-        line-height: 130px; /* 108.333% */
+        line-height: 130px;
         text-transform: uppercase;
         width: 310px;
-        display: flex;
-        justify-content: center;
       }
-  
-      div {
-        h3 {
-          color: rgb(8, 61, 59);
-          text-align: center;
-          font-family: DM Sans;
-          font-size: 15px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: 30px;
-          display: flex;
-          padding: 20px;
-          justify-content: center;
-          align-items: center;
-          gap: 10px;
-          flex-shrink: 0;
-          width: 200px;
-          height: 65px;
-          background-color: rgba(226, 250, 252, 0.422);
-          border-radius: 211px;
+    }
+
+    .div2 {
+      h3 {
+        color: rgb(8, 61, 59);
+        text-align: center;
+        font-family: DM Sans;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+        display: flex;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        width: 200px;
+        height: 65px;
+        background-color: rgba(226, 250, 252, 0.511);
+        border-radius: 211px;
+        &:hover{
+            cursor: pointer;
+            transition: 0.2s;
+            background-color: rgb(251, 78, 78);
+        }
         }
       }
     }
   }
-  
+

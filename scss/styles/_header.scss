@@ -1,4 +1,5 @@
 header {
+  position: fixed;
   width: 100%;
   background-color: rgba(226, 250, 252, 0);
   margin-bottom: 100px;
@@ -31,6 +32,12 @@ header {
         line-height: normal;
         text-transform: uppercase;
         margin-right: 62px;
+
+        &:hover{
+          cursor: pointer;
+          transition: 0.1s;
+          color: hotpink;
+        }
       }
     }
   }
