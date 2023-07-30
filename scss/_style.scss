@@ -1,6 +1,133 @@
-@import "styles/body";
-@import "styles/header";
-@import "styles/section1";
-@import "styles/section2";
-@import "styles/footer";
+header {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(226, 250, 252, 0);
+  margin-bottom: 100px;
+  z-index: 5;
 
+  .container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+      width: 200px;
+      height: 70px;
+      margin-right: 78px;
+    }
+
+    ul {
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+
+      li {
+        color: rgb(8, 61, 59);
+        font-family: "DM Sans", sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        margin-right: 62px;
+
+        &:hover {
+          cursor: pointer;
+          transition: 0.1s;
+          color: hotpink;
+        }
+      }
+    }
+  }
+}
+
+.s-1 {
+  background: url(https://www.classicjourneys.com/wp-content/uploads/2021/07/feb-2021-catalogue-4-1290x640.jpg);
+  background-color: lightgray;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 750px;
+
+  .container {
+    max-width: 1400px;
+    width: 100%;
+    height: 580px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .div1 {
+      margin-top: 150px;
+      width: 1268px;
+      max-width: 100%;
+
+      h1 {
+        color: rgba(248, 255, 147, 0.738);
+        font-family: "Roboto", sans-serif;
+        font-size: 90px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 130px;
+        text-transform: uppercase;
+        width: 310px;
+      }
+    }
+
+    .div2 {
+      h3 {
+        color: rgb(8, 61, 59);
+        text-align: center;
+        font-family: "DM Sans";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+        display: flex;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        width: 200px;
+        height: 65px;
+        background-color: rgba(226, 250, 252, 0.511);
+        border-radius: 211px;
+
+        &:hover {
+          cursor: pointer;
+          transition: 0.2s;
+          background-color: rgb(251, 78, 78);
+        }
+      }
+    }
+  }
+}
+
+.s-2{
+    background-image: url(../images/ბახმარო.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    .container{
+        img{
+            width: 450px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            vertical-align: middle;
+        }
+    }
+    .infodiv{
+        margin: 0 auto;
+        vertical-align: middle;
+    }
+}
