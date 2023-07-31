@@ -2,8 +2,6 @@ header {
   position: fixed;
   width: 100%;
   background-color: rgba(226, 250, 252, 0);
-  margin-bottom: 100px;
-  z-index: 5;
 
   .container {
     max-width: 1400px;
@@ -29,8 +27,14 @@ header {
       display: flex;
       align-items: center;
 
+      img {
+        width: 40px;
+        height: 48px;
+        display: none;
+      }
+
       li {
-        a{
+        a {
           color: rgb(25, 177, 172);
           font-family: "DM Sans", sans-serif;
           font-size: 18px;
@@ -60,17 +64,19 @@ header {
   max-width: 100%;
   height: 750px;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   .container {
     max-width: 1400px;
     width: 100%;
-    height: 580px;
-    margin: 0 auto;
+    height: 350px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 
     .div1 {
-      margin-top: 150px;
       width: 1268px;
       max-width: 100%;
 
@@ -121,7 +127,7 @@ header {
   flex-direction: column;
 
   width: 100%;
-  height: 100vh;
+  height: 85vh;
 
   .container {
     margin: 0 auto;
@@ -130,7 +136,7 @@ header {
     align-items: center;
     width: 100%;
     flex: content;
-    background-color: #010a20cf;
+    background-color: #00040ed7;
 
     .imgdiv {
       display: flex;
@@ -140,6 +146,7 @@ header {
       img {
         width: 450px;
         height: 300px;
+        border-radius: 20px;
       }
     }
   }
@@ -153,7 +160,169 @@ header {
     color: white;
 
     h1 {
-      margin-bottom: 40px;
+      color: #fff;
+      font-size: 40px;
+      margin-bottom: 60px;
+    }
+
+    p {
+      font-family: DM Sans;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0.18px;
+      color: #fff;
+      margin-bottom: 30px;
+    }
+
+    .input [type="button"] {
+      background-color: rgba(245, 245, 220, 0.793);
+      font-size: 17px;
+      width: 180px;
+      height: 50px;
+      border-radius: 150px;
+      color: rgb(8, 61, 59);
+
+      &:hover {
+        cursor: pointer;
+        transition: 0.2s;
+        background-color: rgba(0, 255, 255, 0.648);
+        color: rgb(251, 78, 78);
+      }
+    }
+  }
+}
+
+.s-3 {
+  background-image: url(../images/გომის\ მთა.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 85vh;
+
+  .container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex: content;
+    background-color: #00040ee7;
+
+    .imgdiv {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 450px;
+        height: 300px;
+        border-radius: 20px;
+      }
+    }
+  }
+
+  .infodiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 407px;
+    color: white;
+
+    h1 {
+      color: #fff;
+      font-size: 40px;
+      margin-bottom: 60px;
+    }
+
+    p {
+      font-family: DM Sans;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0.18px;
+      color: #fff;
+      margin-bottom: 30px;
+    }
+
+    .input[type="button"] {
+      display: flex;
+      background-color: rgba(245, 245, 220, 0.793);
+      font-size: 17px;
+      width: 180px;
+      height: 50px;
+      border-radius: 150px;
+      color: rgb(8, 61, 59);
+
+      &:hover {
+        cursor: pointer;
+        transition: 0.2s;
+        background-color: rgba(0, 255, 255, 0.648);
+        color: rgb(251, 78, 78);
+      }
+    }
+  }
+}
+
+.s-4 {
+  position: relative; /* Required for positioning pseudo-element */
+  background-image: url(../images/ჩაის\ პლანტაციები.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(245, 245, 220, 0.197); /* Add your desired background color here */
+    opacity: 0.7; /* Adjust the opacity as needed */
+  }
+
+  .container {
+    margin: 0 auto;
+    display: flex;
+    width: 960px;
+    flex-direction: column; /* To stack h1 and images vertically */
+
+    .h1div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+      height: 70px;
+      position: relative; /* Required for stacking h1 above pseudo-element */
+      z-index: 1; /* Ensure h1 is above the pseudo-element */
+    }
+
+    .div-img {
+      display: flex;
+      align-items: center;
+
+      .shuaimg {
+        width: 300px;
+        height: 257px;
+        border-radius: 10px;
+        margin-right: 25px;
+      }
+
+      .isari {
+        width: 40px;
+        height: 48px;
+        margin-right: 25px;
+      }
     }
   }
 }
