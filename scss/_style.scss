@@ -14,9 +14,14 @@ header {
     justify-content: space-between;
 
     img {
-      width: 200px;
+      width: 180px;
       height: 70px;
       margin-right: 78px;
+      &:hover {
+        width: 210px;
+        height: 75px;
+        transition: 0.3s;
+      }
     }
 
     ul {
@@ -25,19 +30,22 @@ header {
       align-items: center;
 
       li {
-        color: rgb(8, 61, 59);
-        font-family: "DM Sans", sans-serif;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        text-transform: uppercase;
-        margin-right: 62px;
+        a{
+          color: rgb(25, 177, 172);
+          font-family: "DM Sans", sans-serif;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          text-transform: uppercase;
+          margin-right: 62px;
 
-        &:hover {
-          cursor: pointer;
-          transition: 0.1s;
-          color: hotpink;
+          &:hover {
+            font-size: 24px;
+            cursor: pointer;
+            transition: 0.2s;
+            color: hotpink;
+          }
         }
       }
     }
@@ -78,56 +86,74 @@ header {
       }
     }
 
-    .div2 {
-      h3 {
-        color: rgb(8, 61, 59);
-        text-align: center;
-        font-family: "DM Sans";
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 30px;
-        display: flex;
-        padding: 20px;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        flex-shrink: 0;
-        width: 200px;
-        height: 65px;
-        background-color: rgba(226, 250, 252, 0.511);
-        border-radius: 211px;
+    .input [type="button"] {
+      color: rgb(8, 61, 59);
+      text-align: center;
+      font-family: "DM Sans", sans-serif;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 30px;
+      display: flex;
+      padding: 20px;
+      justify-content: center;
+      align-items: center;
+      width: 220px;
+      height: 70px;
+      background-color: rgba(226, 250, 252, 0.511);
+      border-radius: 211px;
 
-        &:hover {
-          cursor: pointer;
-          transition: 0.2s;
-          background-color: rgb(251, 78, 78);
-        }
+      &:hover {
+        cursor: pointer;
+        transition: 0.2s;
+        background-color: rgb(251, 78, 78);
       }
     }
   }
 }
 
-.s-2{
-    background-image: url(../images/ბახმარო.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+.s-2 {
+  background-image: url(../images/ბახმარო.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100vh;
+
+  .container {
+    margin: 0 auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 100vh;
-    .container{
-        img{
-            width: 450px;
-            height: 300px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            vertical-align: middle;
-        }
+    flex: content;
+    background-color: #010a20cf;
+
+    .imgdiv {
+      display: flex;
+      align-items: center;
+      margin-right: 72px;
+
+      img {
+        width: 450px;
+        height: 300px;
+      }
     }
-    .infodiv{
-        margin: 0 auto;
-        vertical-align: middle;
+  }
+
+  .infodiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 407px;
+    color: white;
+
+    h1 {
+      margin-bottom: 40px;
     }
+  }
 }
