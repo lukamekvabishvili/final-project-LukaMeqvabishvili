@@ -2,6 +2,7 @@ header {
   position: fixed;
   width: 100%;
   background-color: rgba(226, 250, 252, 0);
+  z-index: 2;
 
   .container {
     max-width: 1400px;
@@ -279,6 +280,7 @@ header {
   display: flex;
   width: 100%;
   height: 100vh;
+  z-index: 1;
 
   &::before {
     content: "";
@@ -312,7 +314,7 @@ header {
     .div-img {
       display: flex;
       align-items: center;
-      margin-top: 40px; // Adjust the distance between h1 and images
+      margin-top: 40px;
 
       .arrow-container {
         display: flex;
@@ -332,8 +334,8 @@ header {
         background-color: white;
         border-radius: 50%;
         padding: 5px;
-        text-decoration: none; // Removes underline for anchor tags
-        transition: background-color 0.2s, color 0.2s; // Add a smooth transition effect
+        text-decoration: none;
+        transition: background-color 0.2s, color 0.2s;
       }
 
       .left {
@@ -345,20 +347,77 @@ header {
       }
     }
 
-    // Style for dots
     .dots {
       display: flex;
       justify-content: center;
       margin-top: 35px;
-      width: 130px;
-      background-color: rgba(255, 255, 255, 0.464); 
+      width: 160px;
       img {
-        width: 6px; 
+        width: 6px;
         height: 6px;
-        margin: 0 3px; 
+        margin: 0 3px;
         border-radius: 50%;
       }
     }
   }
 }
 
+.s-5 {
+  background-image: url(../images/saqartvelo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+
+  .container {
+    margin: 0 auto;
+    background-color: rgba(0, 4, 14, 0.6);
+    height: 100%;
+
+    .div-news {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      flex-wrap: wrap;
+
+      h1 {
+        color: #fff;
+        text-align: center;
+        font-family: "DM Sans", sans-serif;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+      }
+
+      p {
+        color: var(--paragraph-dark, #fefeff);
+        text-align: center;
+        font-feature-settings: "clig" off, "liga" off;
+        font-family: "DM Sans", sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.5px;
+      }
+      .input[type="button"] {
+        background-color: rgba(245, 245, 220, 0.79);
+        width: 180px;
+        height: 50px;
+        border-radius: 150px;
+        color: rgb(8, 61, 59);
+        line-height: 50px;
+
+        &:hover {
+          cursor: pointer;
+          transition: 0.2s;
+          background-color: rgba(0, 255, 255, 0.648);
+          color: rgb(251, 78, 78);
+        }
+      }
+    }
+  }
+}
