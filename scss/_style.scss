@@ -1,3 +1,7 @@
+body{
+  margin: 0 auto;
+}
+
 header {
   position: fixed;
   width: 100%;
@@ -16,6 +20,8 @@ header {
       width: 180px;
       height: 70px;
       margin-right: 78px;
+      object-fit: contain;
+
       &:hover {
         width: 210px;
         height: 75px;
@@ -174,7 +180,7 @@ header {
       line-height: 28px;
       letter-spacing: 0.18px;
       color: #fff;
-      margin-bottom: 30px;
+      margin-bottom: 35px;
     }
 
     .input [type="button"] {
@@ -225,47 +231,46 @@ header {
         border-radius: 20px;
       }
     }
-  }
-
-  .infodiv {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 407px;
-    color: white;
-
-    h1 {
-      color: #fff;
-      font-size: 40px;
-      margin-bottom: 60px;
-    }
-
-    p {
-      font-family: DM Sans;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 28px;
-      letter-spacing: 0.18px;
-      color: #fff;
-      margin-bottom: 30px;
-    }
-
-    .input[type="button"] {
+    .infodiv {
       display: flex;
-      background-color: rgba(245, 245, 220, 0.793);
-      font-size: 17px;
-      width: 180px;
-      height: 50px;
-      border-radius: 150px;
-      color: rgb(8, 61, 59);
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 407px;
+      color: white;
+      margin-right: 72px;
+  
+      h1 {
+        color: #fff;
+        font-size: 40px;
+        margin-bottom: 60px;
+      }
+  
+      p {
+        font-family: DM Sans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.18px;
+        color: #fff;
+        margin-bottom: 35px;
+      }
 
-      &:hover {
-        cursor: pointer;
-        transition: 0.2s;
-        background-color: rgba(0, 255, 255, 0.648);
-        color: rgb(251, 78, 78);
+      .input [type="button"] {
+        background-color: rgba(245, 245, 220, 0.793);
+        font-size: 17px;
+        width: 180px;
+        height: 50px;
+        border-radius: 150px;
+        color: rgb(8, 61, 59);
+  
+        &:hover {
+          cursor: pointer;
+          transition: 0.2s;
+          background-color: rgba(0, 255, 255, 0.648);
+          color: rgb(251, 78, 78);
+        }
       }
     }
   }
@@ -374,7 +379,7 @@ header {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    background-color: rgba(0, 4, 14, 0.6);
+    background-color: rgba(0, 4, 14, 0.752);
     height: 100%;
 
     .contact {
@@ -430,6 +435,7 @@ footer{
     img{
       width: 140px;
       height: 70px;
+      object-fit: contain;
 
       &:hover{
         width: 155px;
