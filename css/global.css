@@ -169,7 +169,7 @@ header .container ul li a:hover {
   text-transform: uppercase;
   width: 310px;
 }
-.s-1 .container .input[type=button] {
+.s-1 .container .input [type=button] {
   color: rgb(8, 61, 59);
   text-align: center;
   font-family: "DM Sans", sans-serif;
@@ -192,7 +192,7 @@ header .container ul li a:hover {
   background-color: rgba(226, 250, 252, 0.511);
   border-radius: 211px;
 }
-.s-1 .container .input[type=button]:hover {
+.s-1 .container .input [type=button]:hover {
   cursor: pointer;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -275,7 +275,7 @@ header .container ul li a:hover {
   color: #fff;
   margin-bottom: 30px;
 }
-.s-2 .infodiv .input[type=button] {
+.s-2 .infodiv .input [type=button] {
   background-color: rgba(245, 245, 220, 0.793);
   font-size: 17px;
   width: 180px;
@@ -283,7 +283,7 @@ header .container ul li a:hover {
   border-radius: 150px;
   color: rgb(8, 61, 59);
 }
-.s-2 .infodiv .input[type=button]:hover {
+.s-2 .infodiv .input [type=button]:hover {
   cursor: pointer;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -547,9 +547,6 @@ header .container ul li a:hover {
   width: 700px;
 }
 .s-5 .container .div-news .input[type=button] {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   background-color: rgba(245, 245, 220, 0.79);
   width: 180px;
   height: 50px;
