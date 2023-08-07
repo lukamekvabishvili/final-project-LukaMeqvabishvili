@@ -1,4 +1,7 @@
-body{
+/* style */
+
+body {
+  width: 1519px;
   margin: 0 auto;
 }
 
@@ -15,6 +18,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 1300px) {
+      width: 90%;
+    }
 
     img {
       width: 180px;
@@ -239,13 +245,13 @@ header {
       width: 407px;
       color: white;
       margin-right: 72px;
-  
+
       h1 {
         color: #fff;
         font-size: 40px;
         margin-bottom: 60px;
       }
-  
+
       p {
         font-family: DM Sans;
         font-size: 18px;
@@ -264,7 +270,7 @@ header {
         height: 50px;
         border-radius: 150px;
         color: rgb(8, 61, 59);
-  
+
         &:hover {
           cursor: pointer;
           transition: 0.2s;
@@ -302,6 +308,7 @@ header {
     margin: 0 auto;
     display: flex;
     width: 960px;
+    width: 100%;
     flex-direction: column;
     align-items: center; // Center the content horizontally
 
@@ -321,47 +328,12 @@ header {
       align-items: center;
       margin-top: 40px;
 
-      .arrow-container {
-        display: flex;
-        align-items: center;
-      }
-
-      .shuaimg {
+      img {
         width: 300px;
         height: 257px;
         border-radius: 10px;
         margin-right: 25px;
-      }
-
-      .arrow {
-        font-size: 32px;
-        cursor: pointer;
-        background-color: white;
-        border-radius: 50%;
-        padding: 5px;
-        text-decoration: none;
-        transition: background-color 0.2s, color 0.2s;
-      }
-
-      .left {
-        margin-right: 10px;
-      }
-
-      .right {
-        margin-left: 10px;
-      }
-    }
-
-    .dots {
-      display: flex;
-      justify-content: center;
-      margin-top: 35px;
-      width: 160px;
-      img {
-        width: 6px;
-        height: 6px;
-        margin: 0 3px;
-        border-radius: 50%;
+        object-fit: cover;
       }
     }
   }
@@ -399,45 +371,43 @@ header {
   }
 }
 
+footer {
+  background-color: #243043;
 
-footer{
-  background-color: #243043;;
-
-  .container{
+  .container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin: 0 auto;
     padding: 30px 0;
 
-    h3{
+    h3 {
       color: #9fa4a5;
-      font-family: 'Roboto', sans-serif;
+      font-family: "Roboto", sans-serif;
       font-size: 16px;
       font-style: normal;
       font-weight: 700;
       line-height: normal;
       margin-bottom: 14px;
 
-      &:hover{
+      &:hover {
         font-size: 19px;
         cursor: pointer;
         transition: 0.2s;
         color: hotpink;
       }
     }
-    .footerdiv1{
+    .footerdiv1 {
       display: inline-block;
       margin-right: 100px;
       vertical-align: top;
-
     }
-    img{
+    img {
       width: 140px;
       height: 70px;
       object-fit: contain;
 
-      &:hover{
+      &:hover {
         width: 155px;
         height: 85px;
       }
