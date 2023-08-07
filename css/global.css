@@ -64,7 +64,8 @@ a {
 
 /* style */
 body {
-  width: 1519px;
+  width: 1285px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -115,10 +116,15 @@ header .container ul {
       -ms-flex-align: center;
           align-items: center;
 }
-header .container ul img {
-  width: 40px;
-  height: 48px;
+header .container ul i {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
   display: none;
+}
+header .container ul i :hover {
+  width: 50px;
 }
 header .container ul li a {
   color: rgb(25, 177, 172);
@@ -424,8 +430,7 @@ header .container ul li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 960px;
-  width: 100%;
+  width: 100%; /* Change this to 100% */
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -450,7 +455,8 @@ header .container ul li a:hover {
   z-index: 1;
   color: #fff;
 }
-.s-4 .container .div-img {
+.s-4 .container .wrapper {
+  max-width: 1000px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -458,14 +464,54 @@ header .container ul li a:hover {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 40px;
+  position: relative;
 }
-.s-4 .container .div-img img {
-  width: 300px;
-  height: 257px;
-  border-radius: 10px;
+.s-4 .container .wrapper i {
+  width: 46px;
+  height: 46px;
+  font-size: 12px;
+  cursor: pointer;
+  position: absolute;
+  text-align: center;
+  line-height: 46px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.s-4 .container .wrapper i:first-child {
+  left: -23px;
+}
+.s-4 .container .wrapper i:last-child {
+  right: -23px;
+}
+.s-4 .container .wrapper .inside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+.s-4 .container .wrapper .inside img {
+  width: 31.746031746%;
+  height: 270px;
+  border-radius: 15px;
   margin-right: 25px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.s-4 .container .wrapper .inside img:last-child {
+  /* Corrected pseudo-class syntax */
+  margin-right: 0px;
+}
+@media screen and (max-width: 900px) {
+  .s-4 .container .wrapper img {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .s-4 .container .wrapper img {
+    width: 100%;
+  }
 }
 
 .s-5 {
