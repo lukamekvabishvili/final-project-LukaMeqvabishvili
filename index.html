@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Roboto:wght@900&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/73e314bb76.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/global.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header>
@@ -18,9 +19,9 @@
       <nav>
         <ul>
           <li><a href="">მთავარი</a></li>
-          <li><a href="">სიახლეები</a></li>
+          <li><a href="">კურორტი ბახმარო</a></li>
+          <li><a href="">კურორტი გომის მთა</a></li>
           <li><a href="">გალერია</a></li>
-          <li><a href="">ჩვენს შესახებ</a></li>
           <li><a href="">კონტაქტი</a></li>
           <i class="fa-solid fa-bars fa-2xl"></i>
         </ul>
@@ -78,20 +79,20 @@
           <h1>გაიგე გურიაზე მეტი</h1>
         </div>
         <div class="wrapper">
-          <i class="fa-solid fa-chevron-left"></i>
+          <i id="left" class="fa-solid fa-chevron-left"></i>
           <div class="inside">
-            <img src="images/images2/1.jpg" alt="ჩოხატაური" />
-            <img src="images/images2/2.jpg" alt="ოზურგეთი" />
-            <img src="images/images2/3.jpg" alt="ლანჩხუთი" />
-            <img src="images/images2/4.jpg" alt="ნაბეღლავი" />
-            <img src="images/images2/5.png" alt="ურეკი" />
-            <img src="images/images2/6.jpg" alt="დენდროლოგიური პარკი" />
-            <img src="images/images2/7.jpg" alt="მინიატურული პარკი" />
-            <img src="images/images2/8.jpg" alt="მუსიკალური პარკი" />
-            <img src="images/images2/9.jpg" alt="ბახმაროს ეკლესია" />
-            <img src="images/images2/10.jpg" alt="შემოქმედი" />
+            <img class="myslides" src="images/images2/1.jpg" alt="ჩოხატაური" />
+            <img class="myslides" src="images/images2/2.jpg" alt="ოზურგეთი" />
+            <img class="myslides" src="images/images2/3.jpg" alt="ლანჩხუთი" />
+            <img class="myslides" src="images/images2/4.jpg" alt="ნაბეღლავი" />
+            <img class="myslides" src="images/images2/5.png" alt="ურეკი" />
+            <img class="myslides" src="images/images2/6.jpg" alt="დენდროლოგიური პარკი" />
+            <img class="myslides" src="images/images2/7.jpg" alt="მინიატურული პარკი" />
+            <img class="myslides" src="images/images2/8.jpg" alt="მუსიკალური პარკი" />
+            <img class="myslides" src="images/images2/9.jpg" alt="ბახმაროს ეკლესია" />
+            <img class="myslides" src="images/images2/10.jpg" alt="შემოქმედი" />
           </div>
-          <i class="fa-solid fa-chevron-right"></i>
+          <i id="right" class="fa-solid fa-chevron-right"></i>
         </div>
       </div>
     </section>
@@ -139,6 +140,25 @@
         <a href="https://www.tbceducation.ge/"><img src="images/თიბისი.png" alt="TBC logo"></a>
       </div>
     </footer>
+    <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
   </body>
   </html>
   

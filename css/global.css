@@ -71,19 +71,18 @@ body {
 body .container {
   width: 100%;
 }
-@media screen and (max-width: 1055) {
-  body .container {
-    width: 90%;
-  }
-}
-
-header {
+body header {
   position: fixed;
   width: 100%;
   background-color: rgba(226, 250, 252, 0);
   z-index: 2;
 }
-header .container {
+@media screen and (max-width: 950px) {
+  body header {
+    width: 90%;
+  }
+}
+body header .container {
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
@@ -97,25 +96,20 @@ header .container {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-@media (max-width: 1300px) {
-  header .container {
-    width: 90%;
-  }
-}
-header .container img {
+body header .container img {
   width: 180px;
   height: 70px;
   margin-right: 78px;
   -o-object-fit: contain;
      object-fit: contain;
 }
-header .container img:hover {
+body header .container img:hover {
   width: 210px;
   height: 75px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-header .container ul {
+body header .container ul {
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,17 +118,17 @@ header .container ul {
       -ms-flex-align: center;
           align-items: center;
 }
-header .container ul i {
+body header .container ul i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
   display: none;
 }
-header .container ul i :hover {
+body header .container ul i :hover {
   width: 50px;
 }
-header .container ul li a {
+body header .container ul li a {
   color: rgb(25, 177, 172);
   font-family: "DM Sans", sans-serif;
   font-size: 18px;
@@ -144,15 +138,14 @@ header .container ul li a {
   text-transform: uppercase;
   margin-right: 62px;
 }
-header .container ul li a:hover {
+body header .container ul li a:hover {
   font-size: 24px;
   cursor: pointer;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   color: hotpink;
 }
-
-.s-1 {
+body .s-1 {
   background: url(https://www.classicjourneys.com/wp-content/uploads/2021/07/feb-2021-catalogue-4-1290x640.jpg);
   background-color: lightgray;
   background-size: cover;
@@ -169,7 +162,13 @@ header .container ul li a:hover {
       -ms-flex-align: center;
           align-items: center;
 }
-.s-1 .container {
+@media screen and (max-width: 900px) {
+  body .s-1 {
+    background-size: cover;
+    height: 100vh;
+  }
+}
+body .s-1 .container {
   max-width: 1400px;
   width: 100%;
   height: 350px;
@@ -182,11 +181,11 @@ header .container ul li a:hover {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.s-1 .container .div1 {
+body .s-1 .container .div1 {
   width: 1268px;
   max-width: 100%;
 }
-.s-1 .container .div1 h1 {
+body .s-1 .container .div1 h1 {
   color: rgba(248, 255, 147, 0.738);
   font-family: "Roboto", sans-serif;
   font-size: 90px;
@@ -196,7 +195,12 @@ header .container ul li a:hover {
   text-transform: uppercase;
   width: 310px;
 }
-.s-1 .container .input [type=button] {
+@media screen and (max-width: 930px) {
+  body .s-1 .container .div1 h1 {
+    font-size: 65px;
+  }
+}
+body .s-1 .container .input [type=button] {
   color: rgb(8, 61, 59);
   text-align: center;
   font-family: "DM Sans", sans-serif;
@@ -219,14 +223,13 @@ header .container ul li a:hover {
   background-color: rgba(226, 250, 252, 0.511);
   border-radius: 211px;
 }
-.s-1 .container .input [type=button]:hover {
+body .s-1 .container .input [type=button]:hover {
   cursor: pointer;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   background-color: rgb(251, 78, 78);
 }
-
-.s-2 {
+body .s-2 {
   background-image: url(../images/ბახმარო.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -241,7 +244,7 @@ header .container ul li a:hover {
   width: 100%;
   height: 85vh;
 }
-.s-2 .container {
+body .s-2 .container {
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -258,7 +261,7 @@ header .container ul li a:hover {
           flex: content;
   background-color: rgba(0, 4, 14, 0.8431372549);
 }
-.s-2 .container .imgdiv {
+body .s-2 .container .imgdiv {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -267,12 +270,12 @@ header .container ul li a:hover {
           align-items: center;
   margin-right: 72px;
 }
-.s-2 .container .imgdiv img {
+body .s-2 .container .imgdiv img {
   width: 450px;
   height: 300px;
   border-radius: 20px;
 }
-.s-2 .infodiv {
+body .s-2 .infodiv {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -287,12 +290,12 @@ header .container ul li a:hover {
   width: 407px;
   color: white;
 }
-.s-2 .infodiv h1 {
+body .s-2 .infodiv h1 {
   color: #fff;
   font-size: 40px;
   margin-bottom: 60px;
 }
-.s-2 .infodiv p {
+body .s-2 .infodiv p {
   font-family: DM Sans;
   font-size: 18px;
   font-style: normal;
@@ -302,7 +305,7 @@ header .container ul li a:hover {
   color: #fff;
   margin-bottom: 35px;
 }
-.s-2 .infodiv .input [type=button] {
+body .s-2 .infodiv .input [type=button] {
   background-color: rgba(245, 245, 220, 0.793);
   font-size: 17px;
   width: 180px;
@@ -310,15 +313,14 @@ header .container ul li a:hover {
   border-radius: 150px;
   color: rgb(8, 61, 59);
 }
-.s-2 .infodiv .input [type=button]:hover {
+body .s-2 .infodiv .input [type=button]:hover {
   cursor: pointer;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   background-color: rgba(0, 255, 255, 0.648);
   color: rgb(251, 78, 78);
 }
-
-.s-3 {
+body .s-3 {
   background-image: url(../images/გომის\ მთა.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -333,7 +335,7 @@ header .container ul li a:hover {
   width: 100%;
   height: 85vh;
 }
-.s-3 .container {
+body .s-3 .container {
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -350,7 +352,7 @@ header .container ul li a:hover {
           flex: content;
   background-color: rgba(0, 4, 14, 0.9058823529);
 }
-.s-3 .container .imgdiv {
+body .s-3 .container .imgdiv {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -358,12 +360,12 @@ header .container ul li a:hover {
       -ms-flex-align: center;
           align-items: center;
 }
-.s-3 .container .imgdiv img {
+body .s-3 .container .imgdiv img {
   width: 450px;
   height: 300px;
   border-radius: 20px;
 }
-.s-3 .container .infodiv {
+body .s-3 .container .infodiv {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -379,12 +381,12 @@ header .container ul li a:hover {
   color: white;
   margin-right: 72px;
 }
-.s-3 .container .infodiv h1 {
+body .s-3 .container .infodiv h1 {
   color: #fff;
   font-size: 40px;
   margin-bottom: 60px;
 }
-.s-3 .container .infodiv p {
+body .s-3 .container .infodiv p {
   font-family: DM Sans;
   font-size: 18px;
   font-style: normal;
@@ -394,7 +396,7 @@ header .container ul li a:hover {
   color: #fff;
   margin-bottom: 35px;
 }
-.s-3 .container .infodiv .input [type=button] {
+body .s-3 .container .infodiv .input [type=button] {
   background-color: rgba(245, 245, 220, 0.793);
   font-size: 17px;
   width: 180px;
@@ -402,15 +404,14 @@ header .container ul li a:hover {
   border-radius: 150px;
   color: rgb(8, 61, 59);
 }
-.s-3 .container .infodiv .input [type=button]:hover {
+body .s-3 .container .infodiv .input [type=button]:hover {
   cursor: pointer;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   background-color: rgba(0, 255, 255, 0.648);
   color: rgb(251, 78, 78);
 }
-
-.s-4 {
+body .s-4 {
   position: relative;
   background-image: url(../images/ჩაის\ პლანტაციები.jpg);
   background-size: cover;
@@ -423,7 +424,7 @@ header .container ul li a:hover {
   height: 100vh;
   z-index: 1;
 }
-.s-4::before {
+body .s-4::before {
   content: "";
   position: absolute;
   top: 0;
@@ -433,7 +434,7 @@ header .container ul li a:hover {
   background-color: rgba(6, 68, 15, 0.2823529412);
   opacity: 0.7;
 }
-.s-4 .container {
+body .s-4 .container {
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -448,11 +449,11 @@ header .container ul li a:hover {
           align-items: center;
 }
 @media screen and (max-width: 900px) {
-  .s-4 .container {
+  body .s-4 .container {
     width: 90%;
   }
 }
-.s-4 .container .h1div {
+body .s-4 .container .h1div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -468,7 +469,7 @@ header .container ul li a:hover {
   z-index: 1;
   color: #fff;
 }
-.s-4 .container .wrapper {
+body .s-4 .container .wrapper {
   max-width: 1000px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -479,7 +480,7 @@ header .container ul li a:hover {
   margin-top: 40px;
   position: relative;
 }
-.s-4 .container .wrapper i {
+body .s-4 .container .wrapper i {
   width: 46px;
   height: 46px;
   font-size: 12px;
@@ -490,21 +491,27 @@ header .container ul li a:hover {
   background-color: #fff;
   border-radius: 50%;
 }
-.s-4 .container .wrapper i:first-child {
+body .s-4 .container .wrapper i:first-child {
   left: -23px;
 }
-.s-4 .container .wrapper i:last-child {
+body .s-4 .container .wrapper i:last-child {
   right: -23px;
 }
-.s-4 .container .wrapper .inside {
+body .s-4 .container .wrapper .inside {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  scroll-behavior: smooth;
 }
-.s-4 .container .wrapper .inside img {
+body .s-4 .container .wrapper .inside .inside.dragging {
+  cursor: -webkit-grab;
+  cursor: grab;
+  scroll-behavior: auto;
+}
+body .s-4 .container .wrapper .inside img {
   width: 31.746031746%;
   height: 270px;
   border-radius: 15px;
@@ -512,28 +519,31 @@ header .container ul li a:hover {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.s-4 .container .wrapper .inside img:last-child {
+body .s-4 .container .wrapper .inside img .inside.dragging img {
+  pointer-events: none;
+}
+body .s-4 .container .wrapper .inside img:last-child {
   margin-right: 0px;
 }
-@media screen and (max-width: 900px) {
-  .s-4 .container .wrapper .inside img {
+@media screen and (max-width: 970px) {
+  body .s-4 .container .wrapper .inside img {
     width: 50%;
+    width: 300px;
   }
 }
 @media screen and (max-width: 900px) {
-  .s-4 .container .wrapper .inside img {
+  body .s-4 .container .wrapper .inside img {
     width: 100%;
   }
 }
-
-.s-5 {
+body .s-5 {
   background-image: url(../images/saqartvelo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 100vh;
 }
-.s-5 .container {
+body .s-5 .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -547,22 +557,21 @@ header .container ul li a:hover {
   background-color: rgba(0, 4, 14, 0.752);
   height: 100%;
 }
-.s-5 .container .contact h1 {
+body .s-5 .container .contact h1 {
   font-size: 40px;
   color: #fff;
   margin-bottom: 25px;
 }
-.s-5 .container .contact h3 {
+body .s-5 .container .contact h3 {
   font-size: 25px;
   color: #fff;
   width: 380px;
   margin-bottom: 25px;
 }
-
-footer {
+body footer {
   background-color: #243043;
 }
-footer .container {
+body footer .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -575,7 +584,7 @@ footer .container {
   margin: 0 auto;
   padding: 30px 0;
 }
-footer .container h3 {
+body footer .container h3 {
   color: #9fa4a5;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -584,25 +593,25 @@ footer .container h3 {
   line-height: normal;
   margin-bottom: 14px;
 }
-footer .container h3:hover {
+body footer .container h3:hover {
   font-size: 19px;
   cursor: pointer;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   color: hotpink;
 }
-footer .container .footerdiv1 {
+body footer .container .footerdiv1 {
   display: inline-block;
   margin-right: 100px;
   vertical-align: top;
 }
-footer .container img {
+body footer .container img {
   width: 140px;
   height: 70px;
   -o-object-fit: contain;
      object-fit: contain;
 }
-footer .container img:hover {
+body footer .container img:hover {
   width: 155px;
   height: 85px;
 }/*# sourceMappingURL=global.css.map */
